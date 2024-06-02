@@ -4,21 +4,17 @@ import {
   Route,
 } from 'react-router-dom';
 
-import './App.css';
-
 // Pages
-import HomePage from './pages/HomePage';
-import HireMe from './pages/HireMe';
+import HomePage from './Pages/HomePage';
+import HireMe from './Pages/HireMe';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/HireMe" element={<HireMe />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/HireMe" element={<HireMe />} />
+      </Routes>
     </Router>
   );
 }
