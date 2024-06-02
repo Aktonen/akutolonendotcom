@@ -20,6 +20,7 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "eol-last": "error"
+    "eol-last": "error",
+    "no-unused-vars": "warn"
   }
 }
