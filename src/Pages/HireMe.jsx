@@ -6,7 +6,7 @@ import '../Styles/HireMe.css';
 import emailjs from 'emailjs-com';
 
 // Mui Components
-import { Button, TextField, Grid, Alert } from '@mui/material';
+import { Button, TextField, Grid, Alert, Typography } from '@mui/material';
 
 // Email Service credentials
 import { serviceId, templateId, publicKey } from '../emailService';
@@ -36,6 +36,20 @@ function HireMe() {
     <>
       {alertInfo.show ? <Alert variant='filled' severity={alertInfo.severity}>{alertInfo.message}</Alert> : null}
       <div className='hireMe'>
+        <Typography
+          variant="h1"
+          className='hireMeTitle'
+          align="center"
+        >
+          Hire Me!
+        </Typography>
+        <Typography
+          className='hireMeSubTitle'
+          variant="h4"
+          align="center"
+        >
+          Fill out the form below to get in touch with me!
+        </Typography>
         <Grid
           className='hireMeFormWrapper'
           container
