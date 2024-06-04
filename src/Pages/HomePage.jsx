@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+// Mui Components
+import { Button } from "@mui/material";
+
 // Stylesheet
 import "../Styles//HomePage.css";
 
@@ -8,9 +11,9 @@ function HomePage() {
     <div className="homePage">
       <div className="hireMeButtonWrapper">
         <Link to="/HireMe">
-          <button className="hireMeButton">
+          <Button className="hireMeButton">
             Hire me
-          </button>
+          </Button>
         </Link>
       </div>
     </div>
