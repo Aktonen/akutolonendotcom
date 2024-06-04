@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import '../Styles/HireMe.css';
 
 import emailjs from 'emailjs-com';
+import { Link } from "react-router-dom";
 
 // Mui Components
 import { Button, TextField, Grid, Alert, Typography } from '@mui/material';
@@ -36,6 +37,13 @@ function HireMe() {
     <>
       {alertInfo.show ? <Alert variant='filled' severity={alertInfo.severity}>{alertInfo.message}</Alert> : null}
       <div className='hireMe'>
+        <div className="homePageButtonWrapper">
+          <Link to="/">
+            <Button className="homePageButton">
+              Home
+            </Button>
+          </Link>
+        </div>
         <Typography
           variant="h1"
           className='hireMeTitle'
@@ -58,7 +66,7 @@ function HireMe() {
           ref={form}
           onSubmit={sendEmail}
         >
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <TextField
               label="Name"
               className='hireMeFormTextField'
@@ -67,7 +75,7 @@ function HireMe() {
               required
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <TextField
               label="Email"
               className='hireMeFormTextField'
@@ -80,7 +88,6 @@ function HireMe() {
             <TextField
               label="Company Name"
               className='hireMeFormTextField'
-              required
             />
           </Grid>
           <Grid item xs={12}>
