@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 
 // Stylesheet
 import '../Styles/HireMe.css';
+import '@fontsource/roboto/300.css';
 
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
