@@ -7,6 +7,7 @@ import {
 // Pages
 import HomePage from './Pages/HomePage';
 import HireMe from './Pages/HireMe';
+import ElectricityPriceApp from './Pages/ElectricityPriceApp';
 import Footer from './Components/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/HireMe" element={<HireMe />} />
+          <Route path="/ElectricityPriceApp" element={<ElectricityPriceApp />} />
         </Routes>
       </Router>
       <Footer />
