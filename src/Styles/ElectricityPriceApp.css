@@ -1,0 +1,62 @@
+.electricityPriceApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.electricityPriceAppImage {
+  width: 100%;
+  height: 100%;
+}
+
+.electricityPriceAppTitle {
+  margin: 20px !important;
+}
+
+.electricityPriceAppTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.electricityPriceAppText {
+  word-wrap: break-word;
+}
+
+
+.electricityPriceAppImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 50%;
+}
+
+.backAndHireMeButtonWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.backButton {
+  background-color: #f9f9f9 !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+  padding: 10px 20px !important;
+  font-size: 1.2rem !important;
+  cursor: pointer !important;
+  transition: all 0.3s !important;
+  margin-left: 2px !important;
+}
+
+.backButton:hover {
+  background-color: #000 !important;
+  color: #f9f9f9 !important;
+}
+
+.hireMeButton {
+  margin-right: 2px !important;
+}
