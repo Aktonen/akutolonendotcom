@@ -29,6 +29,24 @@ function HomePage() {
       <Typography variant="h6" className="homePageSubTitle" align="center">
         My projects
       </Typography>
+      <Typography variant="body1" className="homePageText" align="center">
+        Here are some of the projects I&apos;ve worked on:
+      </Typography>
+      <div className="projectCardWrapper">
+        <div className="projectCard">
+          <Typography variant="h6" className="projectCardTitle homePageSubTitle" align="center">
+            Electricity price app.
+          </Typography>
+          <Typography variant="body1" className="projectCardText" align="center">
+            This is a very simple mobile app that shows the current electricity price in Finland. The app is built with React Native and it uses an API to get the electricity price data.
+          </Typography>
+          <Link to="/ElectricityPriceApp" className="projectLink">
+            <Button className="projectCardButton">
+              Read more
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
